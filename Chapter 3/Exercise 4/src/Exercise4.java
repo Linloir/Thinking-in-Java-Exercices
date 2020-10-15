@@ -25,3 +25,12 @@ public class Exercise4 {
         System.out.println("Velocity is " + v + " m/s");
     }
 }
+
+/*
+Comments:
+    1. In line19,20, in order to avoid the loss of precision, two new variable are created to store the original 'int'
+       type figures as 'float' type.
+       Is there a better way to do division of two 'int' without losing precision?
+Question:
+    1. How can I get a random number that is always positive ?
+ */

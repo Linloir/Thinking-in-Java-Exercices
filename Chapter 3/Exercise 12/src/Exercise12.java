@@ -1,0 +1,78 @@
+//:Start with a number that is all binary ones. Left shift it, then use the unsigned right-shift operator to right shift
+// through all of its binary positions, each time displaying the result using Integer.toBinaryString( ).
+/**
+ * Exercise 12 of Chapter 3
+ * @author Linloir
+ * @author Jonathan Zhang
+ * @version 1.0 2020-10-17
+ */
+
+import java.util.*;
+
+public class Exercise12 {
+    public static void main(String[] args) {
+        int numberWithAllBinaryOnes = 0x3FF;
+        for (int step = 1; step <= 22; ++step) {
+            System.out.println("Step " + step + "\t:\t" + Integer.toBinaryString(numberWithAllBinaryOnes <<= 1));
+        }
+        for (int step = 1; step<=32; ++step) {
+            System.out.println("Step " + step + "\t:\t" + Integer.toBinaryString(numberWithAllBinaryOnes >>>= 1));
+
+        }
+    }
+}/*Output:
+Step 1	:	11111111110
+Step 2	:	111111111100
+Step 3	:	1111111111000
+Step 4	:	11111111110000
+Step 5	:	111111111100000
+Step 6	:	1111111111000000
+Step 7	:	11111111110000000
+Step 8	:	111111111100000000
+Step 9	:	1111111111000000000
+Step 10	:	11111111110000000000
+Step 11	:	111111111100000000000
+Step 12	:	1111111111000000000000
+Step 13	:	11111111110000000000000
+Step 14	:	111111111100000000000000
+Step 15	:	1111111111000000000000000
+Step 16	:	11111111110000000000000000
+Step 17	:	111111111100000000000000000
+Step 18	:	1111111111000000000000000000
+Step 19	:	11111111110000000000000000000
+Step 20	:	111111111100000000000000000000
+Step 21	:	1111111111000000000000000000000
+Step 22	:	11111111110000000000000000000000
+Step 1	:	1111111111000000000000000000000
+Step 2	:	111111111100000000000000000000
+Step 3	:	11111111110000000000000000000
+Step 4	:	1111111111000000000000000000
+Step 5	:	111111111100000000000000000
+Step 6	:	11111111110000000000000000
+Step 7	:	1111111111000000000000000
+Step 8	:	111111111100000000000000
+Step 9	:	11111111110000000000000
+Step 10	:	1111111111000000000000
+Step 11	:	111111111100000000000
+Step 12	:	11111111110000000000
+Step 13	:	1111111111000000000
+Step 14	:	111111111100000000
+Step 15	:	11111111110000000
+Step 16	:	1111111111000000
+Step 17	:	111111111100000
+Step 18	:	11111111110000
+Step 19	:	1111111111000
+Step 20	:	111111111100
+Step 21	:	11111111110
+Step 22	:	1111111111
+Step 23	:	111111111
+Step 24	:	11111111
+Step 25	:	1111111
+Step 26	:	111111
+Step 27	:	11111
+Step 28	:	1111
+Step 29	:	111
+Step 30	:	11
+Step 31	:	1
+Step 32	:	0
+*/

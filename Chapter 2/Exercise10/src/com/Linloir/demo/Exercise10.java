@@ -6,7 +6,7 @@
  * @version 1.0 2020-10-15
  */
 
-package com.Linloir.demo;
+package com.Linloir.demo;   //Delete this line to use
 import java.util.*;
 
 public class Exercise10 {

@@ -90,5 +90,7 @@ public class Exercise10 {
 
 /*
 Questions:
-    1. How can i use a function outside 'main()' to swap two numbers?
+    1. How can i use a function outside 'main()' to swap two numbers ?
+    2. If i pass two parameters to a function e.g. method(input1, input2), do i pass the value of the number or do i pass
+       a some sort of directory (like *input1) to the method ?
  */
